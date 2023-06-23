@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./Views/**/*.{cshtml,js}"],
+  content: ["**/*.{cshtml,js}"],
   safelist: [
     'input-validation-error'
   ],
