@@ -1,11 +1,11 @@
-# AspNet (Core)  MVC Template
+# ASP.NET (Core)  MVC Template + HTMX + Tailwind + Vertical Slice Architecture Template (VSA)
 
 This is a GitHub Template for ASP.NET Core MVC using .NET 6.
 
 It contains
 
-* a .NET 6 Solution
-* a ASP.NET Core MVC 6 project
+* a .NET 8 Solution configured for Vertical Slice Architecture (VSA)
+* a ASP.NET Core MVC 8 project
 * HTMX
 * HTMX .NET extensions
 * TailwindCSS 3 including hot reload (JIT)
