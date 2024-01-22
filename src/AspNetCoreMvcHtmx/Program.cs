@@ -1,4 +1,6 @@
+using AspNetCoreMvcHtmx;
 using AspNetCoreMvcHtmx.Core;
+using Microsoft.AspNetCore.Mvc.Razor;
 using Serilog;
 using Serilog.Extensions.Logging;
 
@@ -11,6 +13,10 @@ var logger = new SerilogLoggerFactory(Log.Logger)
 // Add services to the container.
 builder.Services.AddControllersWithViews()
   .AddRazorRuntimeCompilation();
+
+builder.Services.Configure<RazorViewEngineOptions>(
+  options => options.ViewLocationExpanders.Add(new FeatureFolderLocationExpander())
+);
 
 var app = builder.Build();
 

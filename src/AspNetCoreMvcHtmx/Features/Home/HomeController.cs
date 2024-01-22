@@ -15,6 +15,6 @@ public class HomeController : Controller
 
   public IActionResult Index()
   {
-    return View("~/Features/Home/Index.cshtml");
+    return View();
   }
 }
